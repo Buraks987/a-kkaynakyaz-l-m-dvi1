@@ -1,0 +1,78 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\bmhbu> ssh ubuntu@localhost -p 2222
+ubuntu@localhost's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-89-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Dec  3 08:22:07 PM UTC 2023
+
+  System load:  0.03271484375     Processes:               115
+  Usage of /:   47.5% of 9.75GB   Users logged in:         1
+  Memory usage: 26%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+38 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sun Dec  3 20:18:00 2023 from 10.0.2.2
+ubuntu@ubuntuserver:~$ ls
+a.txt
+ubuntu@ubuntuserver:~$ git config --global user.name "Burak SEMERCİ"
+ubuntu@ubuntuserver:~$ git config --global user.email "bmh.burak06@gmail.com"
+ubuntu@ubuntuserver:~$ git clone https://github.com/aciklab/github-giris.git
+Cloning into 'github-giris'...
+remote: Enumerating objects: 23, done.
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23
+Receiving objects: 100% (23/23), 94.13 KiB | 664.00 KiB/s, done.
+Resolving deltas: 100% (6/6), done.
+ubuntu@ubuntuserver:~$ ls
+a.txt  github-giris
+ubuntu@ubuntuserver:~$ cd github-giris/
+ubuntu@ubuntuserver:~/github-giris$ ls
+clone.png  fork.png  ilkProjeDenemesi.md  README.md
+ubuntu@ubuntuserver:~/github-giris$ ls - al
+ls: cannot access '-': No such file or directory
+ls: cannot access 'al': No such file or directory
+ubuntu@ubuntuserver:~/github-giris$ ls -al .git
+total 52
+drwxrwxr-x 8 ubuntu ubuntu 4096 Dec  3 20:30 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Dec  3 20:30 ..
+drwxrwxr-x 2 ubuntu ubuntu 4096 Dec  3 20:30 branches
+-rw-rw-r-- 1 ubuntu ubuntu  268 Dec  3 20:30 config
+-rw-rw-r-- 1 ubuntu ubuntu   73 Dec  3 20:30 description
+-rw-rw-r-- 1 ubuntu ubuntu   23 Dec  3 20:30 HEAD
+drwxrwxr-x 2 ubuntu ubuntu 4096 Dec  3 20:30 hooks
+-rw-rw-r-- 1 ubuntu ubuntu  369 Dec  3 20:30 index
+drwxrwxr-x 2 ubuntu ubuntu 4096 Dec  3 20:30 info
+drwxrwxr-x 3 ubuntu ubuntu 4096 Dec  3 20:30 logs
+drwxrwxr-x 4 ubuntu ubuntu 4096 Dec  3 20:30 objects
+-rw-rw-r-- 1 ubuntu ubuntu  114 Dec  3 20:30 packed-refs
+drwxrwxr-x 5 ubuntu ubuntu 4096 Dec  3 20:30 refs
+ubuntu@ubuntuserver:~/github-giris$ nano ilkProjeDenemesi.md
+ubuntu@ubuntuserver:~/github-giris$ ubuntu@ubuntuserver:~/github-giris$
+ubuntu@ubuntuserver:~/github-giris$ git add ilkProjeDenemesi.md
+ubuntu@ubuntuserver:~/github-giris$ git commit -m "Bir satır eklendi"
+[master 3d7e654] Bir satır eklendi
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ubuntu@ubuntuserver:~/github-giris$ git pus origin master
+git: 'pus' is not a git command. See 'git --help'.
+
+The most similar commands are
+        push
+        pull
+ubuntu@ubuntuserver:~/github-giris$ git push origin master
+Username for 'https://github.com':
